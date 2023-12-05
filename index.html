@@ -8,35 +8,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav id="home">
+    <nav>
         <div class="nav-left">
             <p class="logo"><i class="fa-solid fa-utensils"></i>FoodPrep <span>.</span></p>
         </div>
         <div class="nav-right">
             <ul class="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Recipes</a></li>
-                <li><a href="">Reviews</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Recipes">Recipes</a></li>
+                <li><a href="#Reviews">Reviews</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </div>
+     <button class="mobile-btn" aria-controls="primary-navigation" aria-expanded="false">
+    <svg class="hamburger" viewBox="0 0 100 100" width="35px">
+        <rect class="line top" width="80" height="10" x="10" y="25" rx="5"> </rect>
+        <rect class="line middle" width="80" height="10" x="10" y="45" rx="5"> </rect>
+        <rect class="line bottom" width="80" height="10" x="10" y="65" rx="5"> </rect>
+    </svg>
+
+     </button>
     </nav>
-    <div class="container">
+
+    <header id="Home">
+     <div class="container">
         <div class="box">
             <div class="text">
                 <i class="fa-solid fa-utensils"></i>
                 <h1 class="line">Save up to $200</h1>
                 <p class="line">Fresh, pre-portioned ingredients and delicious recipes delivered to your door.</p>
-                <button>claim your offer</button>
+                <button class="button">claim your offer</button>
             </div>
 
         </div>
-    </div>
+     </div>
   </header>
   <main>
-    <section id="delivery">
+    <section id="About">
         <div class="delivery">
             <h1>Dinner, Delivered. How it works</h1>
            <div class="delivery-box">
@@ -59,7 +68,7 @@
         </div>
 
     </section>
-    <section id="recipes">
+    <section id="Recipes">
         <div class="recipes">
             <h1>Enjoy 40+ recipes each week, crafted and curated by our chefs.</h1>
             <h5>Simply select recipes after checkout</h5>
@@ -96,7 +105,7 @@
             <div class="reason-container">
                 <h1>Save time & money</h1>
                 <p>We save you serious time and money compared to grocery stores and restaurants. Do you know what's better? You can also forget about making last-minute trips to the grocery store because you'll have everything you need delivered to your doorstep!</p>
-                <button>CLAIM YOUR OFFER</button>
+                <button class="button">CLAIM YOUR OFFER</button>
             </div>
         </div>
         <div class="reason-2">
@@ -106,7 +115,7 @@
             <div class="reason-container">
                 <h1>Less food Waste=greener footprint</h1>
                 <p>Not only do our meal kits lead to less food waste thanks to the pre-portioned ingredients in every box, but where possible, we look for ways to take measurable action to reduce carbon emissions.</p>
-                <button>CLAIM YOUR OFFER</button>
+                <button class="button">CLAIM YOUR OFFER</button>
             </div>
            
         </div>
@@ -124,7 +133,7 @@
       
     </section>
     <!--Reviews-->
-    <section id="reviews">
+    <section id="Reviews">
         <div class="review-title">
             <h1>Our Customer <span>Reviews</span></h1>
             <p>Here are some of the reasons we have more 5-star reviews than any other meal kit</p>
@@ -186,7 +195,7 @@
                             <h3>50% off now</h3>
                             <h3>Discount for Tasty Spaghetti</h3>
                             <p>Only this week</p>
-                            <button>Order now</button>
+                            <button class="button">Order now</button>
                         </div>
                     </div>
                 </li>
@@ -196,7 +205,7 @@
                         <div class="banner-text">
                             <h3>50% off now</h3>
                             <p>Only this week</p>
-                            <button>Order now</button>
+                            <button class="button">Order now</button>
                         </div>
                     </div>
                 </li>
@@ -206,7 +215,7 @@
                         <div class="banner-text">
                             <h3>30% off Now</h3>
                             <p>Only this week</p>
-                            <button>Order now</button>
+                            <button class="button">Order now</button>
                         </div>
                     </div>
                 </li>
@@ -216,7 +225,7 @@
                         <div class="banner-text">
                             <h3>30% off Now</h3>
                             <p>Only this week</p>
-                            <button>Order now</button>
+                            <button class="button">Order now</button>
                         </div>
                     </div>
                 </li>
@@ -224,7 +233,7 @@
         </div>
     </section>
   </main>
-  <div class="footer-1">
+  <div id="Contact" class="footer-1">
     <div class="footer-container">
         <div class="footer-1-text">
                 <ul class="contact">
@@ -253,5 +262,6 @@
     </div>
 
   </div>
+  <script src="script.js"></script>
 </body>
 </html>

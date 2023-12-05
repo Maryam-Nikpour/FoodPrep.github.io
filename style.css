@@ -6,14 +6,15 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior:smooth;
+
+
 }
 body {
     width: 100%;
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-family: 'poppins', sans-serif;
-    
+    font-family: 'poppins', sans-serif; 
   
 }
 ul,li, a, button{
@@ -39,11 +40,12 @@ p {
     font-family: 'rubik', sans-serif;
     font-size: clamp(1rem, 0.8vw, 1rem);
     line-height: 1.5em;
-    color: hsl(0, 0%, 47%);;
+    color: hsl(0, 0%, 47%);
+   
+
 }
 h3{
     margin-top: 0.75em;
-    font-family: 'Rubik',sans-serif;
 }
 h5{
     margin-bottom: 0.5rem;
@@ -58,17 +60,17 @@ h5{
 
 /*Nav*/
 nav{
+    position: fixed;
     display: flex;
     align-items: center;
     color: #666;
     font-family: 'Rubik', sans-serif;
     justify-content: space-between;
-    z-index: 999;
     width: 100%;
     height: 80px;
-    background-color: #fff;
     padding-left: 3%;
     padding-right: 3%;
+    background-color: #fff;
 }
 .nav-right{
     display: flex;
@@ -111,7 +113,7 @@ nav{
 }
    
 
-button{
+.button{
     background-color: rgb(6, 122, 70);
     color: #ffff;
     border-style: none;
@@ -126,36 +128,100 @@ button{
     border-radius: 20px;
     cursor: pointer;
 }
-button:hover{
+.button:hover{
     background-color:#000;
     color: #eee;
 
 }
-@media screen and (max-width: 767px) { 
+   
+  .mobile-btn{
+    fill: rgb(6, 122, 70);
+    border:none; 
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+    margin-right: 5px;
+   
+  }
+  .mobile-btn .line{
+    transition: y 300ms ease-in 300ms,
+     rotate 300ms ease-in, 
+     opacity  0ms 300ms;
+    transform-origin: center;
+  }
+  .mobile-btn[aria-expanded="true"] .line{
+    transition: y 300ms ease-in, rotate 300ms ease-in 300ms, opacity 0ms 300ms;
+  
+  }
+  
+  .mobile-btn[aria-expanded="true"] :is(.top, .bottom){
+    y:45;
 
-    .nav-right{
-     display: none;
+  }
+  .mobile-btn[aria-expanded="true"] .top{
+    rotate: 45deg;
+  }
+  .mobile-btn[aria-expanded="true"] .bottom{
+    rotate: -45deg;
+  }
+  .mobile-btn[aria-expanded="true"] .middle{
+   opacity: 0;
+  }
+  .mobile-btn[aria-expanded="true"] .top{
+    x
+  }
+  @media screen and (max-width: 767px) { 
+
+    .mobile-btn{
+        display: block;
     }
 
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color:rgb(152, 30, 24);
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    .menu li{
+        margin: 16px;
+     
+     
+    }
+    .menu li:hover{
+        margin: 16px;
+        border-bottom: none;
+     
+     
+    }
+    .menu.active{
+        left: 0;
+
+    }
+  
    }
 /*Header*/
-header{
- 
-}
 
 .container{
     display: grid;
-    grid-template-columns: repeat(12, 1fr); 
-    grid-template-rows: auto;
-    background: url(resources/Fresh\ Salad\ food\ menu\ instagram\ post.png);
-    height: 650px;
-    background-repeat: no-repeat;
+    grid-template-columns:repeat(12, 1fr); 
+    grid-template-rows:auto;
+    background:url(resources/Fresh\ Salad\ food\ menu\ instagram\ post.png);
+    height:800px;
+    background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
     font-family: 'Rubik',sans-serif;
 
 }
 .box{
+ 
     color: #ffff;
     display: flex;
     flex-direction: column;
@@ -175,13 +241,13 @@ margin-bottom: 1.2rem;
 }
 @media screen and (max-width: 576px) { 
     .box{
-        grid-row: 2/8;
-        grid-column: 1/6;
+        grid-row: 4/8;
+        grid-column: 1/9;
     }
   }
 
 /*Delivery*/
-#delivery{
+#About{
     margin: 3em;
 }
 .delivery{
@@ -208,7 +274,7 @@ margin-bottom: 1.2rem;
     width: 100%;
     max-width:350px;
     flex-direction: column;
-   text-align: justify;
+   text-align:justify;
    overflow: hidden;
 }
 
@@ -295,7 +361,7 @@ margin-bottom: 1.2rem;
     height: 320px;
 }
 /*Reviews*/
-#reviews{
+#Reviews{
     background-color: #eee;
     padding: 2rem;
     height: 100%;
@@ -396,9 +462,10 @@ position: relative;
     left:55%;
 }
 .banner-text p,h3{
-    color:#fff;
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
+  
+
  
 }
 .large-banner{
@@ -443,13 +510,14 @@ position: relative;
     height: 80vh;
     padding-top: 150px;
     border-top:1px solid #666;
-  
+    overflow-x: hidden;
+ 
 }
 .footer-1::after{
     content: url(resources/delivery-boy.svg);
     position: absolute;
     left: -25px;
-    bottom:-10px;
+    bottom:-12px;
     width: 180px;
     animation: cycling 10s linear infinite;
 
