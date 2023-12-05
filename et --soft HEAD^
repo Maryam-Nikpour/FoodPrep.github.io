@@ -1,0 +1,23 @@
+[33mcommit ce78ed77a21937207464469272dcd46394924693[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Maryam-Nikpour <109689812+Maryam-Nikpour@users.noreply.github.com>
+Date:   Tue Dec 5 11:16:09 2023 -0500
+
+    Add z-index to nav
+
+[33mcommit 1aff735cdb5b0f868925c8f2143f24b584cbad8f[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Maryam-Nikpour <109689812+Maryam-Nikpour@users.noreply.github.com>
+Date:   Tue Dec 5 11:11:39 2023 -0500
+
+    fix paragraphs and headings
+
+[33mcommit 303506e0d796eb18205b36ee1f01c984c5d07833[m
+Author: Maryam-Nikpour <109689812+Maryam-Nikpour@users.noreply.github.com>
+Date:   Tue Dec 5 10:38:20 2023 -0500
+
+    Add hamburger Menu
+
+[33mcommit 060d326b5bfc1e61896c1dc4f74d1d4cbb2f1a8d[m
+Author: Maryam-Nikpour <109689812+Maryam-Nikpour@users.noreply.github.com>
+Date:   Thu Nov 16 15:47:47 2023 -0500
+
+    initial project
