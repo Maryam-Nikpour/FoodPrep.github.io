@@ -29,6 +29,7 @@ h1{
     font-family: 'Rubik', serif;
     font-size: clamp(1.9rem, 1.2vw, 2.5rem);
     margin-bottom: 0.5em;
+   
 }
 h2 {
     font-family: 'Rubik', serif;
@@ -263,6 +264,7 @@ margin-bottom: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2em;
+    
   
 }
 .delivery-item{
@@ -274,9 +276,11 @@ margin-bottom: 1.2rem;
     width: 100%;
     max-width:350px;
     flex-direction: column;
-   text-align:justify;
    overflow: hidden;
+   text-align: center;
+  
 }
+
 
 
 .delivery-item img{
@@ -311,7 +315,7 @@ margin-bottom: 1.2rem;
     gap: 0.6vw;
     width: 100%;
     max-width:350px;
-    text-align: justify;
+    text-align: center;
 }
 .recipe-item h3{
     color: #000;
@@ -351,9 +355,10 @@ margin-bottom: 1.2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+
     max-width:400px;
-    text-align: justify;
+    text-align: center;
+   justify-content: center;
 }
 
 .image-container img{
@@ -395,7 +400,7 @@ margin-bottom: 1.2rem;
     gap: 0.5vw;
     width: 100%;
     max-width:330px;
-    text-align: justify;
+    text-align: center;
     background-color: #fff;
     height: 350px;
 }
