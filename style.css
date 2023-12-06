@@ -521,18 +521,19 @@ position: relative;
     background-position: bottom;
     border-bottom: 1px solid;
     margin-top: 80px;
-    height: 80vh;
     padding-top: 150px;
     border-top:1px solid #666;
     overflow-x: hidden;
+    overflow-y: hidden;
+    height: 600px;
   
  
 }
 .footer-1::after{
     content: url(resources/delivery-boy.svg);
-    position: relative;
+    position: absolute;
     left: -25px;
-    bottom:40px;
+    bottom:-10px;
     width: 180px;
     animation: cycling 10s linear infinite;
 
@@ -540,12 +541,11 @@ position: relative;
 }
 .footer-1-text{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
     padding-left: 10%;
     color: #666;
     line-height: 3rem;
-    gap: 300px;
 
 }
 .footer-1-text .title{
