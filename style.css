@@ -142,8 +142,7 @@ nav{
     background-color: transparent;
     cursor: pointer;
     display: none;
-    margin-right:20px;
-   
+ 
   }
   .mobile-btn .line{
     transition: y 300ms ease-in 300ms,
@@ -156,23 +155,19 @@ nav{
   
   }
   
-  .mobile-btn[aria-expanded="true"] :is(.top, .bottom){
-    y:45;
-
-  }
   .mobile-btn[aria-expanded="true"] .top{
     rotate: 45deg;
+    y:45px;
   }
   .mobile-btn[aria-expanded="true"] .bottom{
     rotate: -45deg;
+    y:45px;
   }
   .mobile-btn[aria-expanded="true"] .middle{
    opacity: 0;
   }
-  .mobile-btn[aria-expanded="true"] .top{
-    x
-  }
-  @media screen and (max-width: 768px) { 
+  
+  @media screen and (max-width:768px) { 
 
     .mobile-btn{
         display: block;
@@ -519,15 +514,17 @@ position: relative;
     padding-top: 150px;
     border-top:1px solid #666;
     overflow-x: hidden;
+  
  
 }
 .footer-1::after{
     content: url(resources/delivery-boy.svg);
-    position: absolute;
+    position: relative;
     left: -25px;
-    bottom:-12px;
+    bottom:40px;
     width: 180px;
     animation: cycling 10s linear infinite;
+
 
 }
 .footer-1-text{
