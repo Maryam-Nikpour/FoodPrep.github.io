@@ -1,6 +1,7 @@
 const mobilebtn=document.querySelector('.mobile-btn');
 const navMenu=document.querySelector('.menu');
 const navItem=document.querySelectorAll('.nav-item');
+const panels=document.querySelectorAll('.panel');
 mobilebtn.addEventListener('click',()=>{
   
     const isOpened=mobilebtn.getAttribute('aria-expanded');
@@ -17,3 +18,18 @@ navItem.forEach(navItem => {
         mobilebtn.setAttribute('aria-expanded', 'false');
     });
 });
+
+panels.forEach((panel)=>{
+    panel.addEventListener('click',() => {
+       removeActiveClasses()
+   panel.classList.add('active')
+   
+    })
+   
+   }) 
+   function removeActiveClasses(){
+       panels.forEach(panel=>{
+           panel.classList.remove('active')
+   
+       })
+   }
