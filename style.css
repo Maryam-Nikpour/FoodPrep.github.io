@@ -78,7 +78,7 @@ nav{
     padding-left: 3%;
     padding-right: 3%;
     background-color: #fff;
-    z-index: 3;
+    z-index: 5;
 }
 .nav-right{
     display: flex;
@@ -326,14 +326,14 @@ margin-bottom: 1.2rem;
 }
 .slide-container{
     display: flex;
-    width: 80vw;
+    width:80vw;
     margin-top: 1rem;
 }
 .panel{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:70vh;
+    height:60vh;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
