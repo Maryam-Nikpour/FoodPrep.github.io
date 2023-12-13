@@ -319,7 +319,7 @@ margin-bottom: 1.2rem;
     height:100vh;
     overflow: hidden;
     flex-direction: column;
-    z-index: -1;
+    height: 100vh;
 
 }
 #sliding-recipes h1{
@@ -330,13 +330,15 @@ margin-bottom: 1.2rem;
     display: flex;
     width:80vw;
     margin-top: 1rem;
+    height: 100%;
+   
    
 }
 .panel{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height:60vh;
+    height:90%;
     border-radius: 50px;
     color: #fff;
     cursor: pointer;
@@ -344,6 +346,7 @@ margin-bottom: 1.2rem;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
+   
 
 }
 .panel h3{
@@ -517,7 +520,6 @@ margin-bottom: 1.2rem;
  display: flex;
  align-items: center;
  justify-content: center;
- z-index: -1;
  
 }
 .banner-container{
@@ -527,7 +529,6 @@ margin-bottom: 1.2rem;
 }
 
 .banner-box{
-
 height: 100%;
 overflow: hidden;
 position: relative;
