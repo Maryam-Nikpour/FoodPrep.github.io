@@ -78,7 +78,7 @@ nav{
     padding-left: 3%;
     padding-right: 3%;
     background-color: #fff;
-    z-index: 5;
+    z-index:1000;
 }
 .nav-right{
     display: flex;
@@ -180,7 +180,7 @@ nav{
      
       
     }
-
+  
     .menu{
         position: fixed;
         left: -100%;
@@ -319,6 +319,8 @@ margin-bottom: 1.2rem;
     height:100vh;
     overflow: hidden;
     flex-direction: column;
+    z-index: -1;
+
 }
 #sliding-recipes h1{
     text-align: center;
@@ -328,6 +330,7 @@ margin-bottom: 1.2rem;
     display: flex;
     width:80vw;
     margin-top: 1rem;
+   
 }
 .panel{
     background-size: cover;
@@ -514,8 +517,8 @@ margin-bottom: 1.2rem;
  display: flex;
  align-items: center;
  justify-content: center;
-
-
+ z-index: -1;
+ 
 }
 .banner-container{
     display: flex;
